@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            👤
+        </div>
+
+        <h2>Welcome!</h2>
+
+        <nav class="sidebar-menu">
+
+            <a href="/dashboard" class="active">
+                Dashboard
+            </a>
+
+            <a href="/expenses" >
+                Transactions
+            </a>
+
+            <a href="/budgets">
+                Budgets
+            </a>
+
+            <a href="/reports">
+                Reports
+            </a>
+
+            <a href="/savings">
+                Savings Goals
+            </a>
+
+        </nav>
+
+    </aside>
+    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+
+</body>
+</html>
